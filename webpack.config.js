@@ -188,10 +188,10 @@ const webpackConfig = {
                             optipng: {
                                 enabled: false,
                             },
-                            pngquant: {
-                                quality: '65-90',
-                                speed: 4
-                            },
+                            // pngquant: {
+                            //     quality: '65-90',
+                            //     speed: 4
+                            // },
                             gifsicle: {
                                 interlaced: false,
                             },
