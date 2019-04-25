@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "analyze": "source-map-explorer 'dist/js/*.js'",
-    "start": "webpack-dev-server --progress",
+    "start": "set PORT=8081 &&webpack-dev-server --progress",
     "watch": "webpack --watch",
     "build": "NODE_ENV=production webpack",
     "test": "mocha"
