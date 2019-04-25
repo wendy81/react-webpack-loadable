@@ -1,0 +1,50 @@
+{
+    "presets": [
+        "@babel/preset-react",
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        /**
+        * if you are using Babel (e.g., to compile JSX to JavaScript) 
+        * then you will need to use the @babel/plugin-syntax-dynamic-import plugin. 
+        * This is a syntax-only plugin, meaning Babel won’t do any additional transformations. 
+        * The plugin simply allows Babel to parse dynamic imports 
+        * so webpack can bundle them as a code split. 
+        */
+        "@babel/plugin-syntax-dynamic-import",
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "libraryDirectory": "lib",
+                "style": "css"
+            },
+            "bable-plugin-import-antd"
+        ],
+        [
+            "import",
+            {
+                "libraryName": "lodash",
+                "libraryDirectory": "",
+                "camel2DashComponentName": false
+            },
+            "bable-plugin-import-lodash"
+        ],
+        [
+            /**
+                    * This is where the @babel/plugin-transform-runtime plugin comes in: 
+                    * all of the helpers will reference the module @babel/runtime to avoid 
+                    * duplication across your compiled output. The runtime will be compiled into your build.
+                    */
+            "@babel/plugin-transform-runtime",
+            {
+                "absoluteRuntime": false,
+                "corejs": false,
+                "helpers": true,
+                "regenerator": true,
+                "useESModules": false
+            }
+        ]
+    ]
+}
+

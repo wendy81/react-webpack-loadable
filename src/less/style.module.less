@@ -1,0 +1,56 @@
+// override ant-btn
+.override-ant-btn {
+    :global(.ant-btn){
+        background-image: url('../images/header_002.jpg');
+        border-radius: 20px;
+        box-shadow: 0 20px 0 rgba(0, 0, 0, 0.015);
+        color:#40a9ff;
+        border:#40a9ff 1px solid;
+        display: inline-flex;
+    }
+}
+
+.vertical-middle {
+    display: inline-flex;
+    align-items: center;
+}
+
+.v-m-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//
+.form-field {
+    display: block;
+    margin-bottom:20px;
+}
+
+.btn-primary {
+    :global(.ant-btn .ant-btn-primary){
+        text-align: center;
+    }
+    display: inline;
+    margin-right: 10px;
+}
+
+
+.hit-green {
+    color:green;
+}
+
+.hit-red {
+    color: red;
+}
+
+
+.alert {
+    :global(.ant-alert){
+        position: fixed;
+        right:20px;
+        top:20px;
+    }
+    z-index: 100;
+}
+
