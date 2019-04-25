@@ -243,6 +243,8 @@ const webpackConfig = {
     },
 
     devServer: {
+        host: '192.168.0.150',
+        port: 3005,
         contentBase: "./public",
         historyApiFallback: true,
         inline: true,
