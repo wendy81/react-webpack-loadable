@@ -19,4 +19,4 @@ const Index = () => (
     </StoreContext.Provider >
 )
 
-ReactDOM.render(<Index />, document.getElementById('root'))
+ReactDOM.render(<Index />, document.getElementById('root'));
