@@ -176,31 +176,31 @@ const webpackConfig = {
                         options: {
                             name: devBuild ? '[hash].[ext]' : 'images/[sha512:hash:base64:7].[ext]',
                         }
-                    },
-                    {
-                        loader: 'image-webpack-loader',
-                        options: {
-                            mozjpeg: {
-                                progressive: true,
-                                quality: 65
-                            },
-                            // optipng.enabled: false will disable optipng
-                            optipng: {
-                                enabled: false,
-                            },
-                            // pngquant: {
-                            //     quality: '65-90',
-                            //     speed: 4
-                            // },
-                            gifsicle: {
-                                interlaced: false,
-                            },
-                            // the webp option will enable WEBP
-                            webp: {
-                                quality: 75
-                            }
-                        }
                     }
+                    // {
+                    //     loader: 'image-webpack-loader',
+                    //     options: {
+                    //         mozjpeg: {
+                    //             progressive: true,
+                    //             quality: 65
+                    //         },
+                    //         // optipng.enabled: false will disable optipng
+                    //         optipng: {
+                    //             enabled: false,
+                    //         },
+                    //         // pngquant: {
+                    //         //     quality: '65-90',
+                    //         //     speed: 4
+                    //         // },
+                    //         gifsicle: {
+                    //             interlaced: false,
+                    //         },
+                    //         // the webp option will enable WEBP
+                    //         webp: {
+                    //             quality: 75
+                    //         }
+                    //     }
+                    // }
                 ]
             }
         ]
